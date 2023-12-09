@@ -1,0 +1,93 @@
+.mainContainer {
+    background-color: white;
+}
+
+.mainContainerProduct {
+  background-color: #ffffff;
+	min-height: 100vh;
+    padding-top: 20px;
+}
+
+@media screen and  (max-width:840px) {
+
+  .mainContainerProduct {
+    margin-bottom: 100px;
+
+    }
+
+}
+
+
+.trendingline {
+    max-width: 84.45rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .trendingline span {
+    border-top: 2px solid #6B7280;
+    width: 100%;
+  }
+
+  @media screen and  (max-width:840px) {
+
+    .trendingline span {
+        border-top: 2px solid #6B7280;
+        width: 22%;
+      }
+
+  }
+
+  .trendingline h2 {
+    white-space: nowrap;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+
+  .productContainerMain {
+    max-width: 86rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+    background-color: white;
+  }
+
+
+  .productSecondContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-left: 0.75rem/* 12px */;
+    margin-right: 0.75rem/* 12px */;
+  }
+
+  @media (min-width: 768px) {
+    .productSecondContainer {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+
+  @media (min-width: 640px) {
+    .productSecondContainer {
+        gap: 0.5rem/* 8px */;
+    }
+}
+
+
+
+  @media (min-width: 1024px) {
+    .productSecondContainer {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+
